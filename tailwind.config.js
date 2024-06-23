@@ -8,7 +8,7 @@ export default {
     extend: {},
   },
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: ["light", "dark", "cupcake", "winter", "dracula"],
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
 }
