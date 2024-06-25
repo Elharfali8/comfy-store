@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // loader
 import {loader as landingLoader} from './pages/Landing'
 import {loader as singleProductsLoader} from './pages/SingleProduct'
+import {loader as productsLoader} from './pages/Products'
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
         {
           path: 'products',
           element: <Products />,
+          errorElement: <ErrorElement />,
+          loader: productsLoader
         },
         {
           path: 'products/:id',
